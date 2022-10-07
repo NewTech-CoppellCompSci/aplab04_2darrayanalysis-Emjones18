@@ -163,8 +163,13 @@ public class ArrayAnalysis {
 	//#10
 	public static double average3D(int[][][] arr) {
 		
+		int work = 0;
 		
-		return 0;
+		for (int[][] one : arr) {
+			work += average(one);
+			
+		}
+		return work;
 	}
 	
 	
